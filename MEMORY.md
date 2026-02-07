@@ -30,3 +30,11 @@
 - **消息发送**: 使用message工具确保消息可靠送达
 - **AI模型管理**: 支持多模型切换，包括第三方API接入
 - **容器管理**: 熟练使用Docker管理各类服务（Meting API、Twikoo等）
+
+## 故障排查案例库
+
+### 案例1: Gateway 崩溃循环 (2026-02-07)
+**症状**: 服务状态 `activating` 或 `failed`，SSH 关闭后无响应  
+**原因**: 旧前台进程未清理 + 端口冲突 + 重启风暴触发系统保护  
+**解决**: `pkill` 清理残留 → `systemctl reset-failed` 解除限制 → 重新启动  
+**预防**: 配置前检查 `lsof -i :18789`，合理设置 `RestartSec` 和 `StartLimitBurst`
