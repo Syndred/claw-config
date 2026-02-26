@@ -1,0 +1,10 @@
+{
+  "name": "morning-report",
+  "schedule": { "kind": "cron", "expr": "0 8 * * *", "tz": "Asia/Shanghai" },
+  "payload": {
+    "kind": "agentTurn",
+    "message": "执行早安日报任务：\n1. 获取Google Trends AI热词（使用web_search）\n2. 检查未读邮件\n3. 检查待办事项\n4. 生成早报摘要并发送给主人。\n请确保内容简洁有趣，使用'🐕'作为签名。"
+  },
+  "delivery": { "mode": "announce" },
+  "sessionTarget": "isolated"
+}
