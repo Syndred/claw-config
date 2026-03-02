@@ -82,3 +82,69 @@ at: "2026-02-23T22:25:00.000Z"   ❌ 错误（把北京时间当成了UTC，差8
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
+
+---
+
+## 滴答清单（Dida365）OpenAPI 集成
+
+### App 注册信息
+- **Client ID**：`Mh4vQq12OmUrF5Uxz8`
+- **Client Secret**：存储在 `/root/.openclaw/.env` → `DIDA365_CLIENT_SECRET`
+- **Access Token**：存储在 `/root/.openclaw/.env` → `DIDA365_ACCESS_TOKEN`（授权后写入）
+- **API Base**：`https://api.dida365.com`
+- **Auth Base**：`https://dida365.com`
+
+### OAuth2 授权流程（Authorization Code）
+
+#### Step 1 — 引导授权
+```
+GET https://dida365.com/oauth/authorize
+  ?scope=tasks:read%20tasks:write
+  &client_id=Mh4vQq12OmUrF5Uxz8
+  &state=<随机字符串>
+  &redirect_uri=<你配置的回调地址>
+  &response_type=code
+```
+
+#### Step 2 — 拿到 code
+回调 URL 带回 `?code=xxx&state=xxx`
+
+#### Step 3 — code 换 access_token
+```bash
+curl -X POST 'https://dida365.com/oauth/token' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -u 'Mh4vQq12OmUrF5Uxz8:$DIDA365_CLIENT_SECRET' \
+  --data-urlencode 'code=YOUR_CODE' \
+  --data-urlencode 'grant_type=authorization_code' \
+  --data-urlencode 'scope=tasks:read tasks:write' \
+  --data-urlencode 'redirect_uri=YOUR_REDIRECT_URI'
+```
+响应里取 `access_token`，写入 `.env`。
+
+#### Step 4 — 调用 API
+所有请求加 Header：
+```
+Authorization: Bearer $DIDA365_ACCESS_TOKEN
+```
+
+### 常用 API
+
+| 功能 | Method | Path |
+|------|--------|------|
+| 获取指定任务 | GET | `/open/v1/project/{projectId}/task/{taskId}` |
+| 获取项目任务列表 | GET | `/open/v1/project/{projectId}/data` |
+| 获取所有项目 | GET | `/open/v1/project` |
+| 创建任务 | POST | `/open/v1/task` |
+| 更新任务 | POST | `/open/v1/task/{taskId}` |
+| 完成任务 | POST | `/open/v1/project/{projectId}/task/{taskId}/complete` |
+| 删除任务 | DELETE | `/open/v1/project/{projectId}/task/{taskId}` |
+
+### 任务状态字段
+- `status: 0` = 未完成
+- `status: 2` = 已完成
+- `completedTime` = 完成时间（ISO 8601）
+
+### 调用脚本
+```bash
+node /root/.openclaw/skills/dida365/dida365.mjs tasks:completed
+```
