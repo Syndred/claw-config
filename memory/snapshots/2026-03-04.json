@@ -1,0 +1,215 @@
+{
+  "savedAt": "2026-03-04T00:00:44.540Z",
+  "tasks": {
+    "6974852aebcdbd0000000664": {
+      "id": "6974852aebcdbd0000000664",
+      "title": "陈禹锟调到周六下午",
+      "status": 0,
+      "projectId": "68c52c2bebcdbd0000000204",
+      "projectName": "👨‍🎓换班"
+    },
+    "6972f502ebcdbd00000004f4": {
+      "id": "6972f502ebcdbd00000004f4",
+      "title": "李卓谦需要开发票",
+      "status": 0,
+      "projectId": "68cbdc15ebcdbd0000000183",
+      "projectName": "💬其他"
+    },
+    "69846f08ebcdbd00000000e1": {
+      "id": "69846f08ebcdbd00000000e1",
+      "title": "内购礼品",
+      "status": 0,
+      "projectId": "68cbdc15ebcdbd0000000183",
+      "projectName": "💬其他"
+    },
+    "6971c426ebcdbd0000000241": {
+      "id": "6971c426ebcdbd0000000241",
+      "title": "带李猷奕补课",
+      "status": 0,
+      "projectId": "68d77863ebcdbd00000007a9",
+      "projectName": "✊学情"
+    },
+    "699e931bebcdbd000000006f": {
+      "id": "699e931bebcdbd000000006f",
+      "title": "李恒毅补课",
+      "status": 0,
+      "projectId": "68d77863ebcdbd00000007a9",
+      "projectName": "✊学情"
+    },
+    "69a52a9cebcdbd00000002ac": {
+      "id": "69a52a9cebcdbd00000002ac",
+      "title": "typeace修复到可用",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "69a55887ebcdbd00000003be": {
+      "id": "69a55887ebcdbd00000003be",
+      "title": "加入腾讯云cos",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "69a6fde3106a7c1176c35bcd": {
+      "id": "69a6fde3106a7c1176c35bcd",
+      "title": "书影移动端适配",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "696dc223ebcdbd000000005b": {
+      "id": "696dc223ebcdbd000000005b",
+      "title": "开通paypal",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "698e781ad5d4561587d82579": {
+      "id": "698e781ad5d4561587d82579",
+      "title": "开多一个dy",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699e63baebbe39000000032b": {
+      "id": "699e63baebbe39000000032b",
+      "title": "Stripe 支付正式接入",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699e63baebbe390000000330": {
+      "id": "699e63baebbe390000000330",
+      "title": "邮件通知 — 支付成功/失败邮件通知用户",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699e63baebbe39000000032c": {
+      "id": "699e63baebbe39000000032c",
+      "title": "Stripe Webhook 验证 ",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699e63baebbe390000000334": {
+      "id": "699e63baebbe390000000334",
+      "title": "移动端适配优化 — 测试各种手机屏幕下的体验",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699e63baebbe390000000333": {
+      "id": "699e63baebbe390000000333",
+      "title": "CDN 缓存策略 — 给 R2 资源设置合理的 Cache-Control",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699e63baebbe390000000335": {
+      "id": "699e63baebbe390000000335",
+      "title": "SEO 增强 — 添加 Open Graph 图片、Twitter Card 图片",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699e63baebbe39000000032e": {
+      "id": "699e63baebbe39000000032e",
+      "title": "Google Analytics / 百度统计 — 添加流量分析",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699e63baebbe390000000331": {
+      "id": "699e63baebbe390000000331",
+      "title": "用户管理后台 — 查看用户数据、配额使用情况",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699e63baebbe390000000332": {
+      "id": "699e63baebbe390000000332",
+      "title": "图片压缩优化 — 上传前客户端压缩，减少 R2 存储和带宽",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699e63baebbe390000000336": {
+      "id": "699e63baebbe390000000336",
+      "title": "隐私政策 & 服务条款页面 — 上线前法律合规必备",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699e648eebbe3900000003c1": {
+      "id": "699e648eebbe3900000003c1",
+      "title": "常用软件优化",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699e6495ebbe3900000003c6": {
+      "id": "699e6495ebbe3900000003c6",
+      "title": "常用网站优化",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699e651cebbe3900000003dd": {
+      "id": "699e651cebbe3900000003dd",
+      "title": "项目展示优化",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699e6527ebbe3900000003e5": {
+      "id": "699e6527ebbe3900000003e5",
+      "title": "技能展示补充图片",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699e6752ebbe39000000048b": {
+      "id": "699e6752ebbe39000000048b",
+      "title": "tg信息差多平台发布",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699e6752ebbe39000000048c": {
+      "id": "699e6752ebbe39000000048c",
+      "title": "完成付费社群转化",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699faef0ebbe3900000001eb": {
+      "id": "699faef0ebbe3900000001eb",
+      "title": "还差一篇文章写一半",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699fb064ebbe3900000003a1": {
+      "id": "699fb064ebbe3900000003a1",
+      "title": "openclaw自动多平台发布",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "699fb24debbe390000000491": {
+      "id": "699fb24debbe390000000491",
+      "title": "stripe接入",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    },
+    "69a390a4ebbe39000000005a": {
+      "id": "69a390a4ebbe39000000005a",
+      "title": "笔记",
+      "status": 0,
+      "projectId": "699e6357ebbe39000000029a",
+      "projectName": "🚶Way"
+    }
+  }
+}
