@@ -41,6 +41,7 @@
 ## 代码仓库路径
 - **主人博客**: `/root/.openclaw/workspace/Blog-Mizuki` (Mizuki主题博客，日记写在 src/data/diary.ts)
 - **我的记忆文档**: `/root/.openclaw/workspace` (MEMORY.md/SOUL.md/USER.md等，需每日根据和主人的了解进行更新并同步到GitHub)
+- **博客/日记发布硬规则**: 任何 Blog-Mizuki 的 blog/diary 更新都必须执行 `本地 build → commit + push → 等 5 分钟 → 线上验站`，只有线上可见才算真正完成，避免“写了没交”或“交了没验”。
 
 ## 定时任务 (已配置)
 | 时间 | 任务 |
